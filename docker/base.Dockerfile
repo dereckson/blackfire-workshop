@@ -3,7 +3,7 @@ MAINTAINER Tugdual Saunier <tugdual.saunier@blackfire.io>
 
 RUN /usr/local/bin/docker-php-ext-install mbstring
 RUN /usr/local/bin/docker-php-ext-install opcache
-RUN pecl install apcu-beta
+RUN pecl install apcu
 RUN rm -Rf /tmp/pear
 
 COPY php.ini /usr/local/etc/php/conf.d/php.ini
